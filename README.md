@@ -1,13 +1,17 @@
 # flask-hello
 Simple example of a dockerized Hello World python flask web app
 
-```git clone git@github.com:jwovens/flask-hello.git
+### clone master branch
 ```
-```cd flask-hello
+git clone git@github.com:jwovens/flask-hello.git
 ```
-```docker build -t alpine-flask/hello ./
+
+### build dockerized web-app and run binding localhost port 5000 to container port 5000
 ```
-```docker run -d -p 5000:5000 alpine-flask/hello
+cd flask-hello
+docker build -t alpine-flask/hello ./
+docker run -d -p 5000:5000 alpine-flask/hello
 ```
-```Navigate to http://localhost:5000/hello/JoeBloggs
-```
+
+### Navigate to 
+ http://localhost:5000/hello/JoeBloggs
